@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ADD THIS TEST LINE */
+body {
+  background-color: white
+}
