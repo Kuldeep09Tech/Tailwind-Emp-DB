@@ -39,8 +39,6 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            {/* --- GRID SYSTEM CHANGED HERE --- */}
-            {/* Changed lg:grid-cols-[350px_1fr] to lg:grid-cols-2 */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
 
                 {/* --- LEFT COLUMN --- */}
@@ -58,7 +56,7 @@ const Dashboard = () => {
                         <p className="mt-2 text-[11px] font-bold text-gray-700">As of 02-12-2025</p>
                     </div>
 
-                    {/* Updates Section */}
+
                     <div>
                         <h3 className="text-blue-900 font-bold mb-3 text-base">Updates & Notification</h3>
                         <div className="bg-white p-5 rounded shadow-sm min-h-[200px] border border-gray-100">
@@ -76,7 +74,6 @@ const Dashboard = () => {
                 </div>
 
                 {/* --- RIGHT COLUMN (Leaderboard) --- */}
-                {/* Changed 'class' to 'className' */}
                 <div className="w-full overflow-x-hidden bg-white rounded pb-[15px] shadow-[0_1px_3px_rgba(0,0,0,0.05)] gap-6">
 
                     {/* Filters */}

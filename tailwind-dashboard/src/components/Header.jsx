@@ -3,8 +3,7 @@ import { FiLogOut } from 'react-icons/fi';
 
 const Header = () => {
     return (
-        /* FIX: left-[80px] and w-[calc(100%-80px)] 
-           This pushes the header to the right side of the sidebar */
+
         <div className="fixed top-0  left-0 right-[100px] w-[calc(100%-0px)] h-[60px] bg-brand-blue flex justify-end items-center px-6 text-white shadow-md z-40">
             <div className="cursor-pointer hover:opacity-80 transition-opacity">
                 <FiLogOut size={24} />
