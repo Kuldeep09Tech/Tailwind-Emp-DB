@@ -31,8 +31,6 @@ const LeaderboardTable = () => {
         (currentPage - 1) * ITEMS_PER_PAGE,
         currentPage * ITEMS_PER_PAGE
     );
-
-    // Dynamic Style Object ko CSS Variables mein convert karna (Sirf ek bar)
     const tableTheme = {
         '--primary-color': style.primaryColor,
         '--rank-color': style.rankColor,
@@ -42,7 +40,7 @@ const LeaderboardTable = () => {
     return (
         <div
             className="bg-white rounded-sm shadow-sm border border-gray-200 min-h-[600px] w-full overflow-hidden p-[var(--container-padding)]"
-            style={tableTheme} // Yeh akela inline style saare colors ko control karega
+            style={tableTheme} 
         >
             {/* --- SECTION 1: FILTERS --- */}
             <div className="flex flex-row items-center mb-8 w-full gap-2">
