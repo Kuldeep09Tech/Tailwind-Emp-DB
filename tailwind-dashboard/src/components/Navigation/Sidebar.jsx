@@ -41,8 +41,6 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                                 <div
                                     key={item.id}
                                     className="flex flex-col items-center cursor-pointer group px-2"
-                                >
-                                    {/* Inline style ko hata kar Tailwind variable use kiya */}
                                     <div className="w-12 h-12 rounded-xl flex justify-center items-center bg-white/10 mb-1 group-hover:bg-[var(--active-hover)] transition-all">
                                         {Icon && <Icon size={22} className="text-white" />}
                                     </div>
@@ -59,7 +57,6 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     {/* User Profile Section */}
                     <div className="mt-auto mb-4 relative">
                         <div
-                            // Avatar ka background bhi backend se controlled hai
                             className="w-12 h-12 rounded-full flex justify-center items-center font-bold border-2 border-white/20 text-white text-lg shadow-md bg-[var(--avatar-bg)]"
                         >
                             {initial}
