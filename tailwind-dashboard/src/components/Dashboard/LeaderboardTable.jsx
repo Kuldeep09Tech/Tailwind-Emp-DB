@@ -59,8 +59,7 @@ const LeaderboardTable = () => {
                 <select className="flex-1 min-w-[80px] border border-gray-300 p-2 text-sm text-gray-700 outline-none bg-white cursor-pointer rounded-sm">
                     <option>{filters.scaleDropdown}</option>
                 </select>
-
-                {/* Yahan Tailwind ki arbitrary value [var(--name)] use ki hai */}
+                
                 <button className="flex-none px-4 md:px-8 py-2 text-white text-sm font-semibold rounded-sm hover:opacity-90 transition-all whitespace-nowrap bg-[var(--primary-color)]">
                     {filters.submitBtn}
                 </button>
