@@ -1,0 +1,90 @@
+{
+    "general": {
+        "currencySymbol": "Points",
+        "dateFormat": "As of 02-12-2025"
+    },
+    "userProfile": {
+        "name": "ABHILASH RAJENDRAN",
+        "initial": "A",
+        "avatarBg": "#8B2D2D",
+        "role": "Senior Developer",
+        "status": "online"
+    },
+    "sidebar": {
+        "style": {
+            "height": "600px",
+            "topGap": "80px",
+            "mobileWidth": "250px",
+            "desktopWidth": "90px",
+            "backgroundColor": "#2D3E8B",
+            "activeColor": "#FFFFFF",
+            "hoverColor": "rgba(255, 255, 255, 0.1)"
+        },
+        "menuConfig": [
+            { "id": 1, "label": "Home", "icon": "FaChartLine", "path": "/" },
+            { "id": 2, "label": "Dashboard", "icon": "FaChartBar", "path": "/dashboard" },
+            { "id": 3, "label": "Rewards And Performance", "icon": "FaTrophy", "path": "/rewards" },
+            { "id": 4, "label": "Redeem Points", "icon": "FaStar", "path": "/redeem" }
+        ]
+    },
+    "header": {
+        "height": "60px",
+        "backgroundColor": "#2D3E8B",
+        "showUserNameAtZoom": "100%"
+    },
+    "dashboard": {
+        "hero": {
+            "lines": [
+                "Performance is not about being perfect,",
+                "but about giving your best effort every single time."
+            ],
+            "bannerUrl": "/assets/Webbanner.avif",
+            "style": {
+                "height": "180px",
+                "overlayColor": "rgba(0, 0, 0, 0.5)",
+                "fontSizeDesktop": "32px",
+                "fontSizeMobile": "20px"
+            }
+        },
+        "summary": {
+            "title": "Summary",
+            "cardList": [
+                { "id": 1, "value": "10", "label": "Lifetime Total Points", "iconKey": "award" },
+                { "id": 2, "value": "1", "label": "Lifetime Rewards Won", "iconKey": "trophy" },
+                { "id": 3, "value": "1", "label": "Rank in Cohort (FY)", "iconKey": "trending" },
+                { "id": 4, "value": "13", "label": "Rank Pan-India (FY)", "iconKey": "chart" }
+            ]
+        },
+        "notifications": {
+            "title": "Updates & Notification",
+            "sampleMessage": "Congratulations! You are selected for test campaign",
+            "sampleTime": "26 Aug 2025 11:08"
+        },
+        "leaderboard": {
+            "title": "Reward Leaderboard",
+            "settings": {
+                "itemsPerPage": 10
+            },
+            "style": {
+                "inputWidth": "200px",
+                "gapBetween": "12px",
+                "primaryColor": "#2D3E8B",
+                "rankColor": "#EF4444",
+                "containerPadding": "24px"
+            },
+            "filters": {
+                "searchPlaceholder": "Search Name...",
+                "cohortDropdown": "In Your Cohort",
+                "scaleDropdown": "All Scale",
+                "submitBtn": "Submit"
+            },
+            "columns": [
+                { "key": "rank", "label": "Rank", "align": "center" },
+                { "key": "name", "label": "Employee Name", "align": "left" },
+                { "key": "points", "label": "Points Earned", "align": "right" },
+                { "key": "rewards", "label": "Rewards Won", "align": "right" }
+            ],
+            "emptyState": "No employees found matching your search."
+        }
+    }
+}

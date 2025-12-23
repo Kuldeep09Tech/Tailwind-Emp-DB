@@ -7,9 +7,20 @@ export default {
     theme: {
         extend: {
             colors: {
-                'brand-blue': '#1565c0',
-                'brand-red': '#b71c1c',
-                'card-bg': '#eff3f6',
+                brand: {
+                    primary: '#1565c0', // Dark Blue Text/Icons
+                    secondary: '#b71c1c',
+                    accent: '#f9a825',
+                },
+                ui: {
+                    bg: '#f3f4f6',       // <--- CHANGE: Global Background to White (if you want "white behind it")
+                    card: '#eff3f6',     // <--- CHANGE: The Exact Light Blue-Grey for Cards
+                    textMain: '#222222',
+                    textSub: '#555555',
+                }
+            },
+            fontFamily: {
+                sans: ['Roboto', 'sans-serif'],
             }
         },
     },

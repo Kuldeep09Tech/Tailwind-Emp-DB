@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Optional: Set global background color to match design */
 body {
-  background-color: white
+  background-color: #f4f6f8;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Custom Scrollbar (Optional - makes it look cleaner) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
 }

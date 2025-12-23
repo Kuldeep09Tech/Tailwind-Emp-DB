@@ -1,0 +1,18 @@
+/* Using Tailwind's @apply to keep the design system consistent */
+
+.container {
+    @apply w-full;
+}
+
+.mainGrid {
+    /* grid-cols-1 (Mobile) -> lg:grid-cols-2 (Desktop) */
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-6 items-start;
+}
+
+.leftColumn {
+    @apply flex flex-col gap-6 w-full;
+}
+
+.rightColumn {
+    @apply w-full;
+}
