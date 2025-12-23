@@ -5,8 +5,6 @@ import content from '../../constants/content.json';
 const Sidebar = ({ isOpen, toggleSidebar }) => {
     const { style, menuConfig } = content.sidebar;
     const { initial, avatarBg } = content.userProfile;
-
-    // --- STEP 1: Saare dynamic design ko yahan sameta gaya hai ---
     const sidebarStyles = {
         '--sb-bg': style.backgroundColor,
         '--sb-h': style.height,
