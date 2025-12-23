@@ -3,7 +3,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import content from '../../constants/content.json';
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
-    // Leaderboard se primary color le rahe hain
+
     const primaryColor = content.dashboard.leaderboard.style.primaryColor;
 
     if (totalPages <= 1) return null;
@@ -22,7 +22,6 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     return (
         <div
             className="flex justify-center md:justify-end items-center mt-6 gap-2"
-            // Sirf ek baar yahan variable define kiya
             style={{ '--active-bg': primaryColor }}
         >
             {/* PREVIOUS BUTTON */}
@@ -43,7 +42,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
                     className={`
                         w-10 h-10 text-sm rounded-lg transition-all font-bold
                         ${currentPage === page
-                            ? 'text-white shadow-md scale-110 bg-[var(--active-bg)]' // Inline style hata kar Tailwind variable use kiya
+                            ? 'text-white shadow-md scale-110 bg-[var(--active-bg)]' 
                             : 'text-gray-600 hover:bg-gray-100'
                         }
                     `}
